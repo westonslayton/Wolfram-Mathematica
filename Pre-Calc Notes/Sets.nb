@@ -1,0 +1,601 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23848,        593]
+NotebookOptionsPosition[     21362,        549]
+NotebookOutlinePosition[     21754,        565]
+CellTagsIndexPosition[     21711,        562]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"setDeck", "=", "\[IndentingNewLine]", 
+    RowBox[{"Flatten", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"number", ",", "color", ",", "filling", ",", "shape"}], 
+         "}"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"number", ",", "1", ",", "3", ",", "1"}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"color", ",", 
+          RowBox[{"{", 
+           RowBox[{"Green", ",", "Purple", ",", "Red"}], "}"}]}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"filling", ",", 
+          RowBox[{"{", 
+           RowBox[{"empty", ",", "solid", ",", "striped"}], "}"}]}], "}"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"shape", ",", 
+          RowBox[{"{", 
+           RowBox[{"diamond", ",", "oval", ",", "squiggle"}], "}"}]}], 
+         "}"}]}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+      "3"}], "\[IndentingNewLine]", "]"}]}], ";"}], "    "}]], "Input",
+ CellChangeTimes->{
+  3.830513837901175*^9, {3.830589535484488*^9, 3.830589613562086*^9}, {
+   3.8305904342665787`*^9, 3.830590542054123*^9}, 3.830856618916704*^9, {
+   3.830943614915935*^9, 3.8309436734833527`*^9}, {3.830943714225461*^9, 
+   3.8309437273557673`*^9}, {3.831496553394833*^9, 3.8314965552083683`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"97b3537a-e676-4349-8996-40b1c62d31ca"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"1b17b466-bdb0-47e4-9b16-821eed9231ce"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"setCheck", "[", 
+   RowBox[{"{", 
+    RowBox[{"card1_", ",", "card2_", ",", "card3_"}], "}"}], "]"}], ":=", " ",
+   "\[IndentingNewLine]", 
+  RowBox[{"If", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"SameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "]"}], "||", " ", 
+       RowBox[{"UnsameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ")"}], "&&", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"SameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "||", " ", 
+       RowBox[{"UnsameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "]"}]}], ")"}], "&&", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"SameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "3", "]"}], "]"}]}], "]"}], "||", " ", 
+       RowBox[{"UnsameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "3", "]"}], "]"}]}], "]"}]}], ")"}], "&&", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"SameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "4", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "4", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "4", "]"}], "]"}]}], "]"}], "||", " ", 
+       RowBox[{"UnsameQ", "[", 
+        RowBox[{
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "4", "]"}], "]"}], ",", 
+         RowBox[{"card2", "[", 
+          RowBox[{"[", "4", "]"}], "]"}], ",", 
+         RowBox[{"card3", "[", 
+          RowBox[{"[", "4", "]"}], "]"}]}], "]"}]}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "True", ",", "\[IndentingNewLine]", " ", "False"}],
+    "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8309436677705584`*^9, 3.8309436681930237`*^9}, {
+  3.8315015432553*^9, 3.831501544048177*^9}, {3.832067494792222*^9, 
+  3.832067495460556*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"a8fed223-527e-48c0-98e9-d13552802936"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"3f453c57-de19-4ab3-8c3e-da1d766418a0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"allSets", "=", 
+   RowBox[{"Select", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Subsets", "[", 
+      RowBox[{"setDeck", ",", 
+       RowBox[{"{", "3", "}"}]}], "]"}], ",", 
+     RowBox[{"(*", 
+      RowBox[{
+      "generate", " ", "every", " ", "possible", " ", "triple", " ", "from", 
+       " ", "the", " ", "cards", " ", "in", " ", "setDeck"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"setCheck", "[", "#", "]"}], "&"}]}], 
+    RowBox[{"(*", 
+     RowBox[{
+     "check", " ", "those", " ", "triples", " ", "for", " ", 
+      "\"\<setness\>\""}], "*)"}], "\[IndentingNewLine]", "]"}]}], 
+  ";"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"81e78915-4cb1-40c7-9f3e-c9a389ac92fd"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"dd5651bc-0e76-493e-937b-fe0ecafc5f85"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"setCards", " ", "=", " ", "\[IndentingNewLine]", 
+   RowBox[{"Association", "[", "\[IndentingNewLine]", 
+    RowBox[{"Flatten", " ", "@", " ", 
+     RowBox[{"Table", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{"a", ",", " ", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Red", ",", " ", "Purple", ",", " ", "Green"}], "}"}], 
+           "[", 
+           RowBox[{"[", "b", "]"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"empty", ",", " ", "solid", ",", " ", "striped"}], "}"}], 
+           "[", 
+           RowBox[{"[", "c", "]"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"oval", ",", " ", "diamond", ",", " ", "squiggle"}], 
+            "}"}], "[", 
+           RowBox[{"[", "d", "]"}], "]"}]}], "\[IndentingNewLine]", "}"}], 
+        "\[Rule]", "\[IndentingNewLine]", 
+        RowBox[{"Magnify", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"First", " ", "@", " ", 
+           RowBox[{"Import", "[", "\[IndentingNewLine]", 
+            RowBox[{"StringReplace", "[", "\[IndentingNewLine]", 
+             RowBox[{
+             "\"\</Users/westonslayton/Downloads/setCardsPDF/number_color_\
+filling_shape.pdf\>\"", ",", "  ", 
+              RowBox[{"(*", " ", 
+               RowBox[{"use", " ", "the", " ", "correct", " ", 
+                RowBox[{"path", "!"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+              RowBox[{"{", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"\"\<number\>\"", "\[Rule]", 
+                 RowBox[{"ToString", "[", "a", "]"}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"\"\<color\>\"", "\[Rule]", 
+                 RowBox[{"ToString", "[", "b", "]"}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"\"\<filling\>\"", "\[Rule]", 
+                 RowBox[{"ToString", "[", "c", "]"}]}], ",", 
+                "\[IndentingNewLine]", 
+                RowBox[{"\"\<shape\>\"", "\[Rule]", 
+                 RowBox[{"ToString", "[", "d", "]"}]}]}], 
+               "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", "]"}], 
+            "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+          "0.25"}], "\[IndentingNewLine]", "]"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", " ", "3"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"b", ",", " ", "3"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"c", ",", " ", "3"}], "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"d", ",", " ", "3"}], "}"}]}], "\[IndentingNewLine]", "]"}]}],
+     "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.7632082061685553`*^9, 3.763208331157188*^9, {3.763208426560252*^9, 
+   3.763208467397553*^9}, 3.830943873741331*^9, {3.830944114862178*^9, 
+   3.830944121735943*^9}, 3.8309444078673477`*^9},
+ CellLabel->"In[4]:=",ExpressionUUID->"c2609df4-48fd-42c0-a81a-6f98838d7a7e"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"68bc6a4d-72b8-4488-a48c-5ce2bb628ebb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"setCompleter", "[", 
+    RowBox[{"{", 
+     RowBox[{"card1_", ",", "card2_"}], "}"}], "]"}], ":=", 
+   "\[IndentingNewLine]", 
+   RowBox[{"With", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"number", " ", "=", " ", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], ",", 
+       RowBox[{"color", " ", "=", " ", 
+        RowBox[{"{", 
+         RowBox[{"Green", ",", "Purple", ",", "Red"}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"filling", " ", "=", " ", 
+        RowBox[{"{", 
+         RowBox[{"empty", ",", " ", "striped", ",", " ", "solid"}], "}"}]}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"shape", " ", "=", " ", 
+        RowBox[{"{", 
+         RowBox[{"diamond", ",", " ", "oval", ",", " ", "squiggle"}], 
+         "}"}]}]}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{
+      RowBox[{"newNumber", " ", "=", " ", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"SameQ", "[", 
+          RowBox[{
+           RowBox[{"card1", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], ",", 
+           RowBox[{"card2", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", 
+         RowBox[{"(*", " ", 
+          RowBox[{
+          "if", " ", "the", " ", "number", " ", "attributes", " ", "are", " ",
+            "the", " ", "same"}], "*)"}], "\[IndentingNewLine]", 
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"(*", 
+          RowBox[{"return", " ", "that", " ", "atribute"}], " ", "*)"}], 
+         "\[IndentingNewLine]", 
+         RowBox[{"Complement", "[", 
+          RowBox[{"number", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"card1", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", 
+             RowBox[{"card2", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}]}], " ", 
+        RowBox[{"(*", 
+         RowBox[{"otherwise", ",", " ", 
+          RowBox[{"return", " ", "the", " ", "missing", " ", "one"}]}], 
+         "*)"}], "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newColor", " ", "=", " ", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"SameQ", "[", 
+          RowBox[{
+           RowBox[{"card1", "[", 
+            RowBox[{"[", "2", "]"}], "]"}], ",", 
+           RowBox[{"card2", "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Complement", "[", 
+          RowBox[{"color", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"card1", "[", 
+              RowBox[{"[", "2", "]"}], "]"}], ",", 
+             RowBox[{"card2", "[", 
+              RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newFilling", " ", "=", " ", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"SameQ", "[", 
+          RowBox[{
+           RowBox[{"card1", "[", 
+            RowBox[{"[", "3", "]"}], "]"}], ",", 
+           RowBox[{"card2", "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "3", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Complement", "[", 
+          RowBox[{"filling", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"card1", "[", 
+              RowBox[{"[", "3", "]"}], "]"}], ",", 
+             RowBox[{"card2", "[", 
+              RowBox[{"[", "3", "]"}], "]"}]}], "}"}]}], "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newShape", " ", "=", " ", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"SameQ", "[", 
+          RowBox[{
+           RowBox[{"card1", "[", 
+            RowBox[{"[", "4", "]"}], "]"}], ",", 
+           RowBox[{"card2", "[", 
+            RowBox[{"[", "4", "]"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"card1", "[", 
+          RowBox[{"[", "4", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Complement", "[", 
+          RowBox[{"shape", ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"card1", "[", 
+              RowBox[{"[", "4", "]"}], "]"}], ",", 
+             RowBox[{"card2", "[", 
+              RowBox[{"[", "4", "]"}], "]"}]}], "}"}]}], "]"}]}], 
+        "\[IndentingNewLine]", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Flatten", "@", 
+       RowBox[{"{", 
+        RowBox[{
+        "newNumber", ",", "newColor", ",", "newFilling", ",", "newShape"}], 
+        "}"}]}]}]}], "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.831039789784812*^9, {3.831127743209063*^9, 3.831127743645948*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"5ba2a836-bb9e-4abd-bdbb-2d507408ca16"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"5ae9ead3-38dc-4fb9-9f56-20ab7c65aae5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"planeMaker", "[", 
+   RowBox[{"{", 
+    RowBox[{"c1_", ",", "c2_", ",", "c4_"}], "}"}], "]"}], ":=", 
+  "\[IndentingNewLine]", 
+  RowBox[{"Partition", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+     "c1", ",", "\[IndentingNewLine]", "c2", ",", "\[IndentingNewLine]", 
+      RowBox[{"setCompleter", "[", 
+       RowBox[{"{", 
+        RowBox[{"c1", ",", "c2"}], "}"}], "]"}], ",", " ", 
+      RowBox[{"(*", " ", "c3", " ", "*)"}], "\[IndentingNewLine]", "c4", ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"setCompleter", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"setCompleter", "[", 
+          RowBox[{"{", 
+           RowBox[{"c1", ",", "c2"}], "}"}], "]"}], ",", 
+         RowBox[{"setCompleter", "[", 
+          RowBox[{"{", 
+           RowBox[{"c1", ",", "c4"}], "}"}], "]"}]}], "}"}], "]"}], ",", 
+      RowBox[{"(*", " ", "c5", " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"setCompleter", "[", 
+       RowBox[{"{", 
+        RowBox[{"c4", ",", 
+         RowBox[{"setCompleter", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"setCompleter", "[", 
+             RowBox[{"{", 
+              RowBox[{"c1", ",", "c2"}], "}"}], "]"}], ",", 
+            RowBox[{"setCompleter", "[", 
+             RowBox[{"{", 
+              RowBox[{"c1", ",", "c4"}], "}"}], "]"}]}], "}"}], "]"}]}], 
+        "}"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"setCompleter", "[", 
+       RowBox[{"{", 
+        RowBox[{"c1", ",", "c4"}], "}"}], "]"}], ",", 
+      RowBox[{"(*", " ", "c7", " ", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"setCompleter", "[", 
+       RowBox[{"{", 
+        RowBox[{"c2", ",", 
+         RowBox[{"setCompleter", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"setCompleter", "[", 
+             RowBox[{"{", 
+              RowBox[{"c1", ",", "c2"}], "}"}], "]"}], ",", 
+            RowBox[{"setCompleter", "[", 
+             RowBox[{"{", 
+              RowBox[{"c1", ",", "c4"}], "}"}], "]"}]}], "}"}], "]"}]}], 
+        "}"}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"setCompleter", "[", 
+       RowBox[{"{", 
+        RowBox[{"c1", ",", 
+         RowBox[{"setCompleter", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"setCompleter", "[", 
+             RowBox[{"{", 
+              RowBox[{"c1", ",", "c2"}], "}"}], "]"}], ",", 
+            RowBox[{"setCompleter", "[", 
+             RowBox[{"{", 
+              RowBox[{"c1", ",", "c4"}], "}"}], "]"}]}], "}"}], "]"}]}], 
+        "}"}], "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+    "\[IndentingNewLine]", "3"}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellLabel->"In[6]:=",ExpressionUUID->"f1b64f8c-f434-4c29-b902-5b2a722fd39f"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"e9ef0553-8ce0-4364-9c07-0db6a37ed82a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"setToImage", "[", "set_", "]"}], ":=", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"setCards", "[", "#", "]"}], "&"}], ",", "set"}], 
+   "]"}]}]], "Input",
+ CellLabel->"In[7]:=",ExpressionUUID->"a1f54263-d474-4f23-837a-8395fad39208"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"32d8b9a0-b908-4986-a291-37ff3368a6e5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"notSets", " ", "=", " ", "\[IndentingNewLine]", 
+   RowBox[{"Select", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Subsets", "[", 
+      RowBox[{"setDeck", ",", 
+       RowBox[{"{", "3", "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"!", 
+       RowBox[{"setCheck", "[", "#", "]"}]}], "&"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{3.831807222767623*^9},
+ CellLabel->"In[8]:=",ExpressionUUID->"c807fd2f-3f0f-455f-afa1-60b17ec4e035"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"b9c26cd9-8acd-45b3-849b-3c6c5bbbbccc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"attributeCount", "[", "set_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"Count", "[", " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "counting", " ", "the", " ", "number", " ", "of", " ", "attributes", " ", 
+     "that", " ", "are", " ", "different", " ", "in", " ", "a", " ", "given", 
+     " ", "set"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Table", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"SameQ", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"set", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "[", 
+         RowBox[{"[", "n", "]"}], "]"}], ",", " ", 
+        RowBox[{
+         RowBox[{"set", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "[", 
+         RowBox[{"[", "n", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+      
+      RowBox[{"{", 
+       RowBox[{"n", ",", "1", ",", "4", ",", "1"}], "}"}]}], 
+     "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", "False"}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellLabel->"In[9]:=",ExpressionUUID->"030ef294-a4ac-4679-834e-bf836933fb88"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"5b54c319-adb2-4c86-98d8-5373b8901281"],
+
+Cell["\<\
+this list contains the nine cards in each plane, not in the right formatting\
+\>", "Text",
+ CellChangeTimes->{{3.831807127711996*^9, 
+  3.8318071591230307`*^9}},ExpressionUUID->"b2b29011-972e-4e93-b1c3-\
+31f7b1503269"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"allPlanes", " ", "=", " ", "\[IndentingNewLine]", 
+   RowBox[{"DeleteDuplicates", "[", "\[IndentingNewLine]", 
+    RowBox[{"Map", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sort", "[", 
+        RowBox[{"Flatten", "[", 
+         RowBox[{
+          RowBox[{"planeMaker", "[", "#", "]"}], ",", "1"}], "]"}], "]"}], 
+       "&"}], ",", "\[IndentingNewLine]", "notSets"}], "\[IndentingNewLine]", 
+     "]"}], "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8318070092180653`*^9, 3.831807045824802*^9}},
+ CellLabel->
+  "In[145]:=",ExpressionUUID->"536bee3c-8d14-452a-8d68-75ebdaabb45f"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"1e61552a-2646-44ce-a607-4e687264d32d"]
+},
+WindowSize->{706, 696},
+WindowMargins->{{5, Automatic}, {33, Automatic}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"450c26ef-fa69-488f-a658-1cc24e1a2af6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1563, 35, 241, "Input",ExpressionUUID->"97b3537a-e676-4349-8996-40b1c62d31ca"],
+Cell[2124, 57, 99, 1, 4, "PageBreak",ExpressionUUID->"1b17b466-bdb0-47e4-9b16-821eed9231ce",
+ PageBreakBelow->True],
+Cell[2226, 60, 3277, 89, 283, "Input",ExpressionUUID->"a8fed223-527e-48c0-98e9-d13552802936"],
+Cell[5506, 151, 99, 1, 4, "PageBreak",ExpressionUUID->"3f453c57-de19-4ab3-8c3e-da1d766418a0",
+ PageBreakBelow->True],
+Cell[5608, 154, 761, 20, 115, "Input",ExpressionUUID->"81e78915-4cb1-40c7-9f3e-c9a389ac92fd"],
+Cell[6372, 176, 99, 1, 4, "PageBreak",ExpressionUUID->"dd5651bc-0e76-493e-937b-fe0ecafc5f85",
+ PageBreakBelow->True],
+Cell[6474, 179, 3232, 67, 661, "Input",ExpressionUUID->"c2609df4-48fd-42c0-a81a-6f98838d7a7e"],
+Cell[9709, 248, 99, 1, 4, "PageBreak",ExpressionUUID->"68bc6a4d-72b8-4488-a48c-5ce2bb628ebb",
+ PageBreakBelow->True],
+Cell[9811, 251, 5284, 128, 745, "Input",ExpressionUUID->"5ba2a836-bb9e-4abd-bdbb-2d507408ca16"],
+Cell[15098, 381, 99, 1, 4, "PageBreak",ExpressionUUID->"5ae9ead3-38dc-4fb9-9f56-20ab7c65aae5",
+ PageBreakBelow->True],
+Cell[15200, 384, 2800, 70, 409, "Input",ExpressionUUID->"f1b64f8c-f434-4c29-b902-5b2a722fd39f"],
+Cell[18003, 456, 99, 1, 4, "PageBreak",ExpressionUUID->"e9ef0553-8ce0-4364-9c07-0db6a37ed82a",
+ PageBreakBelow->True],
+Cell[18105, 459, 286, 8, 30, "Input",ExpressionUUID->"a1f54263-d474-4f23-837a-8395fad39208"],
+Cell[18394, 469, 99, 1, 4, "PageBreak",ExpressionUUID->"32d8b9a0-b908-4986-a291-37ff3368a6e5",
+ PageBreakBelow->True],
+Cell[18496, 472, 540, 13, 115, "Input",ExpressionUUID->"c807fd2f-3f0f-455f-afa1-60b17ec4e035"],
+Cell[19039, 487, 99, 1, 4, "PageBreak",ExpressionUUID->"b9c26cd9-8acd-45b3-849b-3c6c5bbbbccc",
+ PageBreakBelow->True],
+Cell[19141, 490, 1110, 27, 199, "Input",ExpressionUUID->"030ef294-a4ac-4679-834e-bf836933fb88"],
+Cell[20254, 519, 99, 1, 4, "PageBreak",ExpressionUUID->"5b54c319-adb2-4c86-98d8-5373b8901281",
+ PageBreakBelow->True],
+Cell[20356, 522, 228, 5, 35, "Text",ExpressionUUID->"b2b29011-972e-4e93-b1c3-31f7b1503269"],
+Cell[20587, 529, 669, 15, 157, "Input",ExpressionUUID->"536bee3c-8d14-452a-8d68-75ebdaabb45f"],
+Cell[21259, 546, 99, 1, 4, "PageBreak",ExpressionUUID->"1e61552a-2646-44ce-a607-4e687264d32d",
+ PageBreakBelow->True]
+}
+]
+*)
+

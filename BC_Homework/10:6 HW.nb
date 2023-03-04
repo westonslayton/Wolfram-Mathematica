@@ -1,0 +1,379 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13815,        371]
+NotebookOptionsPosition[     12889,        346]
+NotebookOutlinePosition[     13283,        362]
+CellTagsIndexPosition[     13240,        359]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"TableForm", "@", 
+  RowBox[{"Table", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{"n", ",", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"E", "^", "x"}], " ", 
+          RowBox[{"Log", "[", "x", "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "n"}], "}"}]}], "]"}], "/.", 
+       RowBox[{"x", "\[Rule]", "1"}]}]}], "\[IndentingNewLine]", "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", "10", ",", "1"}], "}"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.842358569669833*^9, 3.842358644927322*^9}, {
+   3.842358685241455*^9, 3.842358686849976*^9}, 3.842358733535088*^9},
+ CellLabel->"In[3]:=",ExpressionUUID->"d46efd01-e4f5-45d3-9400-c896750c0ca1"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"1", "\[ExponentialE]"},
+    {"2", "\[ExponentialE]"},
+    {"3", 
+     RowBox[{"2", " ", "\[ExponentialE]"}]},
+    {"4", "0"},
+    {"5", 
+     RowBox[{"9", " ", "\[ExponentialE]"}]},
+    {"6", 
+     RowBox[{
+      RowBox[{"-", "35"}], " ", "\[ExponentialE]"}]},
+    {"7", 
+     RowBox[{"230", " ", "\[ExponentialE]"}]},
+    {"8", 
+     RowBox[{
+      RowBox[{"-", "1624"}], " ", "\[ExponentialE]"}]},
+    {"9", 
+     RowBox[{"13209", " ", "\[ExponentialE]"}]},
+    {"10", 
+     RowBox[{
+      RowBox[{"-", "120287"}], " ", "\[ExponentialE]"}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.842392187719452*^9, 3.8423922084302607`*^9}},
+ CellLabel->
+  "Out[3]//TableForm=",ExpressionUUID->"3a7097d4-0f86-4fee-a379-81c122a99063"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TableForm", "@", 
+  RowBox[{"Table", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{"n", ",", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"ArcSin", "[", "x", "]"}], 
+          RowBox[{"ArcCos", "[", "x", "]"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "n"}], "}"}]}], "]"}], "/.", 
+       RowBox[{"x", "\[Rule]", "0"}]}]}], "\[IndentingNewLine]", "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", "10", ",", "1"}], "}"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.842358569669833*^9, 3.842358644927322*^9}, {
+   3.842358685241455*^9, 3.842358686849976*^9}, 3.842358733535088*^9, {
+   3.8423923221239758`*^9, 3.842392322298789*^9}, {3.8423924375207033`*^9, 
+   3.84239244299792*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"e900804d-06d2-4578-94d5-b4b0eebe0cad"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"1", 
+     FractionBox["\[Pi]", "2"]},
+    {"2", 
+     RowBox[{"-", "2"}]},
+    {"3", 
+     FractionBox["\[Pi]", "2"]},
+    {"4", 
+     RowBox[{"-", "8"}]},
+    {"5", 
+     FractionBox[
+      RowBox[{"9", " ", "\[Pi]"}], "2"]},
+    {"6", 
+     RowBox[{"-", "128"}]},
+    {"7", 
+     FractionBox[
+      RowBox[{"225", " ", "\[Pi]"}], "2"]},
+    {"8", 
+     RowBox[{"-", "4608"}]},
+    {"9", 
+     FractionBox[
+      RowBox[{"11025", " ", "\[Pi]"}], "2"]},
+    {"10", 
+     RowBox[{"-", "294912"}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.84239244455506*^9},
+ CellLabel->
+  "Out[4]//TableForm=",ExpressionUUID->"c2d3b60f-6eea-44d6-8f10-3686a554dd97"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Row", "[", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"E", "^", "x"}], ",", 
+           RowBox[{"Log", "[", "x", "]"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"PlotStyle", "\[Rule]", "Black"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Ticks", "\[Rule]", "None"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{"ImageSize", "\[Rule]", "200"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{"Epilog", "\[Rule]", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"PointSize", "@", "0.02"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"t", ",", 
+                 RowBox[{"E", "^", "t"}]}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"E", "^", "t"}], ",", "t"}], "}"}]}], "}"}], "]"}], 
+            ",", "\[IndentingNewLine]", "Red", ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"t", ",", 
+                 RowBox[{"E", "^", "t"}]}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"E", "^", "t"}], ",", "t"}], "}"}]}], "}"}], "]"}]}],
+            "\[IndentingNewLine]", "}"}]}]}], "\[IndentingNewLine]", "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Sqrt", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"E", "^", "x"}], "-", "x"}], ")"}], "^", "2"}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "-", 
+              RowBox[{"E", "^", "x"}]}], ")"}], "^", "2"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Ticks", "\[Rule]", "None"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"PlotStyle", "\[Rule]", "Black"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"ImageSize", "\[Rule]", "300"}], ",", "\[IndentingNewLine]", 
+         
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "4"}], ",", "4"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "20"}], "}"}]}], "}"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Epilog", "\[Rule]", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"PointSize", "@", "0.02"}], ",", "Red", ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"t", ",", 
+               RowBox[{"Sqrt", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"E", "^", "t"}], "-", "t"}], ")"}], "^", "2"}], 
+                 "+", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"t", "-", 
+                    RowBox[{"E", "^", "t"}]}], ")"}], "^", "2"}]}], "]"}]}], 
+              "}"}], "]"}]}], "\[IndentingNewLine]", "}"}]}]}], 
+        "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"t", ",", "1"}], "}"}], ",", 
+      RowBox[{"-", "6"}], ",", "6"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.842392480152567*^9, 3.842392674555128*^9}, {
+   3.842392714126322*^9, 3.842392833878167*^9}, {3.842392878514683*^9, 
+   3.84239300459053*^9}, {3.842393061351514*^9, 3.842393192647769*^9}, {
+   3.842393243463896*^9, 3.842393563989985*^9}, {3.842393610951501*^9, 
+   3.842393611124683*^9}, 3.84239369737276*^9, {3.842393769147973*^9, 
+   3.842393999765971*^9}, {3.842394062045134*^9, 3.8423941132370872`*^9}, {
+   3.842394152584445*^9, 3.842394197659815*^9}, {3.842449393585101*^9, 
+   3.842449396401548*^9}, {3.842469874038971*^9, 3.8424699302203493`*^9}},
+ CellLabel->"In[96]:=",ExpressionUUID->"f6c46f02-d37e-4ba4-92ad-8d5e492e40d6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 1}, -6, 6}}, Typeset`size$$ = {
+    500., {98., 102.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Row[{
+         Plot[{E^$CellContext`x, 
+           Log[$CellContext`x]}, {$CellContext`x, -10, 10}, 
+          PlotRange -> {{-5, 5}, {-5, 5}}, PlotStyle -> Black, Ticks -> None, 
+          AspectRatio -> 1, ImageSize -> 200, Epilog -> {
+            PointSize[0.02], 
+            
+            Point[{{$CellContext`t$$, E^$CellContext`t$$}, {
+              E^$CellContext`t$$, $CellContext`t$$}}], Red, 
+            
+            Line[{{$CellContext`t$$, E^$CellContext`t$$}, {
+              E^$CellContext`t$$, $CellContext`t$$}}]}], 
+         Plot[
+          
+          Sqrt[(E^$CellContext`x - $CellContext`x)^2 + ($CellContext`x - 
+             E^$CellContext`x)^2], {$CellContext`x, -15, 15}, Ticks -> None, 
+          PlotStyle -> Black, ImageSize -> 300, 
+          PlotRange -> {{-4, 4}, {0, 20}}, Epilog -> {
+            PointSize[0.02], Red, 
+            Point[{$CellContext`t$$, 
+              
+              Sqrt[(E^$CellContext`t$$ - $CellContext`t$$)^2 + \
+($CellContext`t$$ - E^$CellContext`t$$)^2]}]}]}], 
+      "Specifications" :> {{{$CellContext`t$$, 1}, -6, 6}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{545., {143., 149.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.842393822714044*^9, {3.842393852729725*^9, 3.8423940003154993`*^9}, {
+   3.8423940376675177`*^9, 3.8423941134672003`*^9}, {3.842394153995715*^9, 
+   3.842394198154427*^9}, 3.842449335930539*^9, {3.842449371046219*^9, 
+   3.842449396779954*^9}, 3.842449712131794*^9, 3.842467899402794*^9, {
+   3.842467938291597*^9, 3.842467941050581*^9}, {3.8424698745011053`*^9, 
+   3.842469931423236*^9}},
+ CellLabel->"Out[96]=",ExpressionUUID->"87710c3b-0e36-424e-a1bf-4a9be6bf8338"]
+}, Open  ]]
+},
+WindowSize->{1126, 692},
+WindowMargins->{{54, Automatic}, {Automatic, 36}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cc9b3a1e-0a94-47c6-9581-04d4c9a79e92"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 888, 21, 157, "Input",ExpressionUUID->"d46efd01-e4f5-45d3-9400-c896750c0ca1"],
+Cell[1471, 45, 1111, 35, 196, "Output",ExpressionUUID->"3a7097d4-0f86-4fee-a379-81c122a99063"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2619, 85, 999, 23, 157, "Input",ExpressionUUID->"e900804d-06d2-4578-94d5-b4b0eebe0cad"],
+Cell[3621, 110, 1037, 38, 232, "Output",ExpressionUUID->"c2d3b60f-6eea-44d6-8f10-3686a554dd97"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4695, 153, 5253, 128, 724, "Input",ExpressionUUID->"f6c46f02-d37e-4ba4-92ad-8d5e492e40d6"],
+Cell[9951, 283, 2922, 60, 311, "Output",ExpressionUUID->"87710c3b-0e36-424e-a1bf-4a9be6bf8338"]
+}, Open  ]]
+}
+]
+*)
+

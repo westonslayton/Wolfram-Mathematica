@@ -1,0 +1,142 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3727,        132]
+NotebookOptionsPosition[      3201,        113]
+NotebookOutlinePosition[      3646,        131]
+CellTagsIndexPosition[      3603,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"TableForm", "[", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{
+          RowBox[{"2", "x"}], "-", "1"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1", ",", "2021"}], "}"}]}], "]"}], ",", 
+     RowBox[{
+      RowBox[{"IntegerQ", "[", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{"#", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "]"}], "]"}], "&"}]}], "]"}], ",", 
+   RowBox[{"TableHeadings", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<k\>\"", ",", "\"\<2k-1\>\""}], "}"}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.847830723117042*^9, 3.847830815898736*^9}, {
+  3.847830865109507*^9, 3.847830883418798*^9}, {3.847830914447152*^9, 
+  3.847831023142872*^9}, {3.847831119168888*^9, 3.847831266338567*^9}, {
+  3.847831431235404*^9, 3.847831534917638*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"8e5def30-fa9a-40a5-983e-f792b06f7499"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      TagBox["\<\"k\"\>",
+       HoldForm], 
+      TagBox["\<\"2k-1\"\>",
+       HoldForm]},
+     {"1", "1"},
+     {"5", "9"},
+     {"13", "25"},
+     {"25", "49"},
+     {"41", "81"},
+     {"61", "121"},
+     {"85", "169"},
+     {"113", "225"},
+     {"145", "289"},
+     {"181", "361"},
+     {"221", "441"},
+     {"265", "529"},
+     {"313", "625"},
+     {"365", "729"},
+     {"421", "841"},
+     {"481", "961"},
+     {"545", "1089"},
+     {"613", "1225"},
+     {"685", "1369"},
+     {"761", "1521"},
+     {"841", "1681"},
+     {"925", "1849"},
+     {"1013", "2025"},
+     {"1105", "2209"},
+     {"1201", "2401"},
+     {"1301", "2601"},
+     {"1405", "2809"},
+     {"1513", "3025"},
+     {"1625", "3249"},
+     {"1741", "3481"},
+     {"1861", "3721"},
+     {"1985", "3969"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{
+     "Columns" -> {{False}}, "Rows" -> {False, True, {False}, False}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[2.0999999999999996`]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   {None, OutputFormsDump`HeadedColumns}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$, TableHeadings -> {None, {"k", "2k-1"}}]]]], "Output",\
+
+ CellChangeTimes->{{3.847831514104803*^9, 3.847831535508305*^9}},
+ CellLabel->
+  "Out[41]//TableForm=",ExpressionUUID->"681970d5-5445-45cd-ba07-\
+0cb6accca9a7"]
+}, Open  ]]
+},
+WindowSize->{808, 690},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f6768d3a-bfd2-427e-970b-6c184e9ba61d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1060, 28, 52, "Input",ExpressionUUID->"8e5def30-fa9a-40a5-983e-f792b06f7499"],
+Cell[1643, 52, 1542, 58, 588, "Output",ExpressionUUID->"681970d5-5445-45cd-ba07-0cb6accca9a7"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

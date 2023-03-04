@@ -1,0 +1,301 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11334,        293]
+NotebookOptionsPosition[     10634,        272]
+NotebookOutlinePosition[     11026,        288]
+CellTagsIndexPosition[     10983,        285]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Normal", "@", 
+         RowBox[{"Series", "[", 
+          RowBox[{
+           RowBox[{"n", " ", 
+            RowBox[{"E", "^", "n"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"n", ",", "0", ",", "k"}], "}"}]}], "]"}]}], "/.", 
+        RowBox[{"n", "\[Rule]", "x"}]}], ",", 
+       RowBox[{"x", " ", 
+        RowBox[{"E", "^", "x"}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "4"}], ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Dotted", ",", "Red"}], "}"}], ",", "Black"}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "4"}], ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "1"}], "/", "2"}], ",", 
+          RowBox[{"1", "/", "2"}]}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Ticks", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "4"}], ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "1"}], "/", "2"}], ",", 
+          RowBox[{"1", "/", "2"}]}], "}"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"k", ",", "6"}], "}"}], ",", "0", ",", "9", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.843813767735526*^9, 3.843813840056691*^9}, {
+  3.843813906759675*^9, 3.8438140260856256`*^9}, {3.8438141415532713`*^9, 
+  3.843814187888165*^9}, {3.843814226879311*^9, 3.843814362707715*^9}, {
+  3.843814887559292*^9, 3.84381491110994*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"7baa156d-6eb1-4ad5-ab69-a97a5b6e93da"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 6, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`k$$], 6}, 0, 9, 1}}, Typeset`size$$ = {
+    360., {119., 123.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`k$$ = 6}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         ReplaceAll[
+          Normal[
+           
+           Series[$CellContext`n 
+            E^$CellContext`n, {$CellContext`n, 
+             0, $CellContext`k$$}]], $CellContext`n -> $CellContext`x], \
+$CellContext`x E^$CellContext`x}, {$CellContext`x, -4, 1}, 
+        PlotStyle -> {{Dotted, Red}, Black}, 
+        PlotRange -> {{-4, 1}, {(-1)/2, 1/2}}, 
+        Ticks -> {{-4, 1}, {(-1)/2, 1/2}}], 
+      "Specifications" :> {{{$CellContext`k$$, 6}, 0, 9, 1, Appearance -> 
+         "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {164., 170.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.843814275535828*^9, 3.843814366436841*^9}, {
+  3.843814890599859*^9, 3.843814911580009*^9}, {3.844193011789289*^9, 
+  3.844193028478413*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"767c1f8a-1d33-44c1-8d51-e008bdee78c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Normal", "@", 
+         RowBox[{"Series", "[", 
+          RowBox[{
+           RowBox[{"1", "/", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"n", "^", "2"}], "+", "1"}], ")"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"n", ",", "0", ",", "k"}], "}"}]}], "]"}]}], "/.", 
+        RowBox[{"n", "\[Rule]", "x"}]}], ",", 
+       RowBox[{"1", "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"x", "^", "2"}], "+", "1"}], ")"}]}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Dotted", ",", "Red"}], "}"}], ",", "Black"}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", ".1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Ticks", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "3"}], ",", 
+          RowBox[{"-", "1"}], ",", "1", ",", "3"}], "}"}], ",", "None"}], 
+       "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Epilog", "\[Rule]", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{"Black", ",", "Dashed", ",", "\[IndentingNewLine]", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", 
+               RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1"}], ",", "0"}], "}"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"1", ",", 
+               RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"k", ",", "28"}], "}"}], ",", "1", ",", "35", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8438144797113667`*^9, 3.843814766930608*^9}, {
+   3.843814817323328*^9, 3.8438148176325693`*^9}, {3.844193549028438*^9, 
+   3.8441935890076103`*^9}, {3.844193742923538*^9, 3.844193743833374*^9}, {
+   3.844194260899037*^9, 3.8441942610057096`*^9}, {3.844194351540411*^9, 
+   3.844194351910881*^9}, {3.844194387834064*^9, 3.844194387936512*^9}, {
+   3.8441951214327717`*^9, 3.8441951277703133`*^9}, 3.844196332462257*^9},
+ CellLabel->"In[27]:=",ExpressionUUID->"76a1e796-2ec1-4bbf-8f78-c0d923c771da"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 28, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`k$$], 28}, 1, 35, 1}}, Typeset`size$$ = {
+    360., {107., 111.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`k$$ = 28}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         ReplaceAll[
+          Normal[
+           Series[
+           1/($CellContext`n^2 + 
+            1), {$CellContext`n, 
+             0, $CellContext`k$$}]], $CellContext`n -> $CellContext`x], 
+         1/($CellContext`x^2 + 1)}, {$CellContext`x, -3, 3}, 
+        PlotStyle -> {{Dotted, Red}, Black}, 
+        PlotRange -> {{-3, 3}, {-0.1, 1.1}}, Ticks -> {{-3, -1, 1, 3}, None}, 
+        Epilog -> {Black, Dashed, 
+          Line[{{{-1, 1/2}, {-1, 0}}, {{1, 1/2}, {1, 0}}}]}], 
+      "Specifications" :> {{{$CellContext`k$$, 28}, 1, 35, 1, Appearance -> 
+         "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {152., 158.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.8438144930313797`*^9, 3.843814584832704*^9}, {
+   3.843814659413211*^9, 3.843814767247588*^9}, 3.84381481791994*^9, {
+   3.8441935216939*^9, 3.844193589404643*^9}, 3.8441937444849377`*^9, 
+   3.8441942612445707`*^9, {3.84419437480575*^9, 3.8441944013241167`*^9}, 
+   3.844194445750532*^9, 3.8441951496404257`*^9, 3.844196332806073*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"b4ecd8f1-e070-410d-bbe1-9205e7d5db14"]
+}, Open  ]]
+},
+WindowSize->{808, 692},
+WindowMargins->{{75, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"415649a7-b8e1-495f-9f5a-4a658ec40c68"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2249, 61, 220, "Input",ExpressionUUID->"7baa156d-6eb1-4ad5-ab69-a97a5b6e93da"],
+Cell[2832, 85, 2096, 44, 353, "Output",ExpressionUUID->"767c1f8a-1d33-44c1-8d51-e008bdee78c5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4965, 134, 3275, 86, 304, "Input",ExpressionUUID->"76a1e796-2ec1-4bbf-8f78-c0d923c771da"],
+Cell[8243, 222, 2375, 47, 329, "Output",ExpressionUUID->"b4ecd8f1-e070-410d-bbe1-9205e7d5db14"]
+}, Open  ]]
+}
+]
+*)
+
