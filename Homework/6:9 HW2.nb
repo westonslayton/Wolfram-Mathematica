@@ -1,0 +1,108 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3445,         98]
+NotebookOptionsPosition[      2575,         75]
+NotebookOutlinePosition[      2968,         91]
+CellTagsIndexPosition[      2925,         88]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["2.)",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{
+  3.8321790717098417`*^9},ExpressionUUID->"550368ed-80f0-4b89-bf67-\
+47f9cd0888ae"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"N", "@", 
+   RowBox[{"Length", "[", "\[IndentingNewLine]", 
+    RowBox[{"Select", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"RandomSample", "[", 
+         RowBox[{"setDeck", ",", "3"}], "]"}], ",", "50000"}], "]"}], ",", 
+      " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"setCheck", "[", "#", "]"}], "&"}]}], "\[IndentingNewLine]", 
+     "]"}], "\[IndentingNewLine]", "]"}]}], "/", "50000"}]], "Input",
+ CellChangeTimes->{{3.831810825632725*^9, 3.831810860663999*^9}, {
+   3.8318109075053596`*^9, 3.831810917653377*^9}, 3.831811194230906*^9},
+ CellLabel->"In[25]:=",ExpressionUUID->"b0c76740-bbd7-444f-b645-6974a75de4e1"],
+
+Cell[BoxData["0.012360000000000001`"], "Output",
+ CellChangeTimes->{{3.831810909372842*^9, 3.8318109304854507`*^9}, 
+   3.831816385978894*^9, {3.832177156460928*^9, 3.83217719236854*^9}, 
+   3.83217909419972*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"913ec073-eaac-4760-b30c-5b18889066a1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"1", "/", "79"}], "]"}]], "Input",
+ CellChangeTimes->{{3.831810921697407*^9, 3.831810928739565*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"14aa31db-7187-4e40-9f6c-a00800d341a5"],
+
+Cell[BoxData["0.012658227848101266`"], "Output",
+ CellChangeTimes->{{3.831810924287299*^9, 3.831810932528817*^9}, 
+   3.831816388294211*^9, 3.832177194824464*^9, 3.832179095552127*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"196ee9d9-4862-4a93-a0f5-9be404eb42d2"]
+}, Open  ]],
+
+Cell["\<\
+The probability generated in Mathematica is about the same as 1/79, \
+confirming our answer is correct.\
+\>", "Text",
+ CellChangeTimes->{{3.8321772003865137`*^9, 
+  3.832177242662547*^9}},ExpressionUUID->"76de3968-cba0-4104-9ea6-\
+2688bb2aeb74"]
+},
+WindowSize->{808, 692},
+WindowMargins->{{Automatic, 274}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"80d399b4-d35c-466e-96cf-4765776ec354"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 164, 4, 35, "Text",ExpressionUUID->"550368ed-80f0-4b89-bf67-47f9cd0888ae"],
+Cell[CellGroupData[{
+Cell[747, 28, 734, 16, 136, "Input",ExpressionUUID->"b0c76740-bbd7-444f-b645-6974a75de4e1"],
+Cell[1484, 46, 291, 4, 34, "Output",ExpressionUUID->"913ec073-eaac-4760-b30c-5b18889066a1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1812, 55, 223, 4, 30, "Input",ExpressionUUID->"14aa31db-7187-4e40-9f6c-a00800d341a5"],
+Cell[2038, 61, 263, 3, 34, "Output",ExpressionUUID->"196ee9d9-4862-4a93-a0f5-9be404eb42d2"]
+}, Open  ]],
+Cell[2316, 67, 255, 6, 35, "Text",ExpressionUUID->"76de3968-cba0-4104-9ea6-2688bb2aeb74"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

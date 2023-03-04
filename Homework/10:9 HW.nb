@@ -1,0 +1,221 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8310,        213]
+NotebookOptionsPosition[      7685,        193]
+NotebookOutlinePosition[      8133,        211]
+CellTagsIndexPosition[      8090,        208]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"b", "^", "x"}], ",", 
+       RowBox[{"Log", "[", 
+        RowBox[{"b", ",", "x"}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"AspectRatio", "\[Rule]", 
+      RowBox[{"1", "/", "1"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Thickness", "[", ".009", "]"}], ",", "Blue"}], "}"}], ",", 
+        
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Thickness", "[", ".009", "]"}], ",", "Red"}], "}"}]}], 
+       "}"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Epilog", "\[Rule]", "\[IndentingNewLine]", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"PointSize", "[", "0.02", "]"}], ",", 
+        RowBox[{"Point", "[", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"b", "^", "x"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "]"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Point", "[", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"b", "^", "x"}], ",", "x"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "]"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Thickness", "[", "0.002", "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"x", ",", 
+               RowBox[{"b", "^", "x"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"b", "^", "x"}], ",", "x"}], "}"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "]"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Thickness", "[", ".001", "]"}], ",", 
+        RowBox[{"Darker", "[", "Green", "]"}], ",", "Dashed", ",", " ", 
+        RowBox[{"InfiniteLine", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "1"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+       "}"}]}]}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "2", ",", "5", ",", "1"}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.811089295421021*^9, 3.811089359507318*^9}, {
+  3.811089442125668*^9, 3.811089477741519*^9}, {3.8110895111059933`*^9, 
+  3.8110896424997377`*^9}, {3.811089693210382*^9, 3.8110898097507343`*^9}, {
+  3.8110899199733257`*^9, 3.8110899931447144`*^9}, {3.811173102898848*^9, 
+  3.811173308075787*^9}, {3.8111733511456747`*^9, 3.811173523392902*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"7446f36c-1322-4f5d-98fb-74a5a1ed0cb1"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`b$$ = 2, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`b$$], 2, 5, 1}}, Typeset`size$$ = {
+    360., {178., 182.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`b$$ = 2}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[{$CellContext`b$$^$CellContext`x, 
+         Log[$CellContext`b$$, $CellContext`x]}, {$CellContext`x, -7, 7}, 
+        PlotRange -> {{-7, 7}, {-7, 7}}, AspectRatio -> 1/1, PlotStyle -> {{
+           Thickness[0.009], Blue}, {
+           Thickness[0.009], Red}}, Epilog -> {
+          PointSize[0.02], 
+          Point[
+           
+           Table[{$CellContext`x, $CellContext`b$$^$CellContext`x}, \
+{$CellContext`x, -7, 7}]], 
+          Point[
+           
+           Table[{$CellContext`b$$^$CellContext`x, $CellContext`x}, \
+{$CellContext`x, -7, 7}]], 
+          Thickness[0.002], 
+          Line[
+           
+           Table[{{$CellContext`x, $CellContext`b$$^$CellContext`x}, \
+{$CellContext`b$$^$CellContext`x, $CellContext`x}}, {$CellContext`x, -7, 7}]], 
+          Thickness[0.001], 
+          Darker[Green], Dashed, 
+          InfiniteLine[{0, 0}, {1, 1}]}], 
+      "Specifications" :> {{$CellContext`b$$, 2, 5, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {223., 229.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.811173402306979*^9, 3.811173534707178*^9}, 
+   3.811259089358543*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"23fbef6a-4738-4e5a-89bf-ce48a29753a7"]
+}, Open  ]],
+
+Cell[TextData[{
+ "This figure helps illustrate the  pairs of points between b^x and Log ",
+ StyleBox["b ",
+  FontSlant->"Italic"],
+ "(x). The x and y values of points on the first plot (b^x) correspond to the \
+y and x values of points on the second plot Log b (x). The lines drawn in \
+black show each of the pairs. The manipulate illustrates how the pairs of \
+points change over time as the b value changes. One issue someone may have \
+with it is that the manipulate doesn\[CloseCurlyQuote]t have enough values or \
+that there should be a greater plot range to show more of the scope."
+}], "Text",
+ CellChangeTimes->{{3.811090290879162*^9, 3.811090300071053*^9}, {
+  3.8110903430316353`*^9, 3.811090398086331*^9}, {3.81117354980616*^9, 
+  3.8111736472246437`*^9}, {3.811173778558387*^9, 3.811173811040387*^9}, {
+  3.81117399415875*^9, 3.811174130441655*^9}, {3.811174202130989*^9, 
+  3.811174221825074*^9}},ExpressionUUID->"1f3587e7-9402-45c3-ab63-\
+9417f85e7b6e"]
+},
+WindowSize->{808, 692},
+WindowMargins->{{Automatic, 233}, {Automatic, 46}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a2832ffe-6ef4-4fdf-8eb4-96f43bd3ba2d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3662, 93, 367, "Input",ExpressionUUID->"7446f36c-1322-4f5d-98fb-74a5a1ed0cb1"],
+Cell[4245, 117, 2453, 55, 494, "Output",ExpressionUUID->"23fbef6a-4738-4e5a-89bf-ce48a29753a7"]
+}, Open  ]],
+Cell[6713, 175, 968, 16, 127, "Text",ExpressionUUID->"1f3587e7-9402-45c3-ab63-9417f85e7b6e"]
+}
+]
+*)
+

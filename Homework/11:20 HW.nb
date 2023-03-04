@@ -1,0 +1,259 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9803,        251]
+NotebookOptionsPosition[      9009,        229]
+NotebookOutlinePosition[      9402,        245]
+CellTagsIndexPosition[      9359,        242]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", "x", "]"}], ",", 
+       RowBox[{"Cos", "[", "x", "]"}], ",", 
+       RowBox[{"Csc", "[", "x", "]"}], ",", 
+       RowBox[{"Sec", "[", "x", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "t"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Ticks", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"4", "Pi"}], ",", "Pi"}], "]"}], ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5", ",", "2"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", 
+          RowBox[{"4", "Pi"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Blue", ",", "Red", ",", "Blue", ",", "Red"}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Exclusions", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Cos", "[", "x", "]"}], "\[Equal]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"Sin", "[", "x", "]"}], "\[Equal]", "0"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"3.3", "Pi"}]}], "}"}], ",", "0.001", ",", 
+     RowBox[{"4", "Pi"}]}], "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.814532830881431*^9, 3.814532834550639*^9}, {
+  3.814533022847268*^9, 3.8145330320958776`*^9}, {3.814533068979793*^9, 
+  3.814533074961431*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"c21f0681-8346-47cb-ad4a-24943f1fc527"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 10.367255756846317`, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 10.367255756846317`}, 0.001, 4 Pi}}, 
+    Typeset`size$$ = {360., {109., 113.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 10.367255756846317`},
+       "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         Sin[$CellContext`x], 
+         Cos[$CellContext`x], 
+         Csc[$CellContext`x], 
+         Sec[$CellContext`x]}, {$CellContext`x, 0, $CellContext`t$$}, Ticks -> {
+          Range[0, 4 Pi, Pi], 
+          Range[-5, 5, 2]}, PlotRange -> {{0, 4 Pi}, {-5, 5}}, 
+        PlotStyle -> {Blue, Red, Blue, Red}, 
+        Exclusions -> {Cos[$CellContext`x] == 0, Sin[$CellContext`x] == 0}], 
+      "Specifications" :> {{{$CellContext`t$$, 10.367255756846317`}, 0.001, 4 
+         Pi}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {154., 160.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.814532798768466*^9, 3.8145328351272573`*^9, {3.8145330032415237`*^9, 
+   3.814533032428564*^9}, {3.8145330698100643`*^9, 3.81453307537394*^9}, 
+   3.814533872909842*^9, 3.8148239891193523`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"5fee571d-552f-45b2-a957-a7ab9e946e8c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", "x", "]"}], ",", 
+       RowBox[{"Cos", "[", "x", "]"}], ",", 
+       RowBox[{"Tan", "[", "x", "]"}], ",", 
+       RowBox[{"Cot", "[", "x", "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "t"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Ticks", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"4", "Pi"}], ",", 
+          RowBox[{"Pi", "/", "2"}]}], "]"}], ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5", ",", "2"}], "]"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", 
+          RowBox[{"4.1", "Pi"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Exclusions", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Cos", "[", "x", "]"}], "\[Equal]", "0"}], ",", 
+        RowBox[{
+         RowBox[{"Sin", "[", "x", "]"}], "\[Equal]", "0"}]}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"4", "Pi"}]}], "}"}], ",", "0.001", ",", 
+     RowBox[{"4.1", "Pi"}]}], "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",\
+
+ CellChangeTimes->{{3.814532811627349*^9, 3.814532825859214*^9}, {
+  3.814533050968012*^9, 3.814533052287817*^9}, {3.814533890702277*^9, 
+  3.814533927686151*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"d1b481e7-36dc-40d7-bb15-811d6242d575"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`t$$ = 4 Pi, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 4 Pi}, 0.001, 12.88052987971815}}, 
+    Typeset`size$$ = {360., {115., 120.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`t$$ = 4 Pi}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         Sin[$CellContext`x], 
+         Cos[$CellContext`x], 
+         Tan[$CellContext`x], 
+         Cot[$CellContext`x]}, {$CellContext`x, 0, $CellContext`t$$}, Ticks -> {
+          Range[0, 4 Pi, Pi/2], 
+          Range[-5, 5, 2]}, PlotRange -> {{-1, 4.1 Pi}, {-5, 5}}, 
+        Exclusions -> {Cos[$CellContext`x] == 0, Sin[$CellContext`x] == 0}], 
+      "Specifications" :> {{{$CellContext`t$$, 4 Pi}, 0.001, 
+         12.88052987971815}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {160., 166.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.814532805667994*^9, 3.814532826452044*^9}, 
+   3.8145330528497753`*^9, {3.8145338782161913`*^9, 3.8145339281861467`*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"328b2616-8761-4eed-bfe3-0228463363bf"]
+}, Open  ]],
+
+Cell[BoxData["|"], "Input",
+ CellChangeTimes->{
+  3.814533878187852*^9},ExpressionUUID->"244b2342-00eb-4b4c-823a-\
+0afb8821d491"]
+},
+WindowSize->{808, 692},
+WindowMargins->{{Automatic, 208}, {Automatic, 6}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"88a6eb4a-3b7e-4e48-8fff-4c82968d7ae4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2054, 54, 241, "Input",ExpressionUUID->"c21f0681-8346-47cb-ad4a-24943f1fc527"],
+Cell[2637, 78, 2192, 43, 356, "Output",ExpressionUUID->"5fee571d-552f-45b2-a957-a7ab9e946e8c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4866, 126, 1949, 53, 220, "Input",ExpressionUUID->"d1b481e7-36dc-40d7-bb15-811d6242d575"],
+Cell[6818, 181, 2043, 40, 345, "Output",ExpressionUUID->"328b2616-8761-4eed-bfe3-0228463363bf"]
+}, Open  ]],
+Cell[8876, 224, 129, 3, 30, "Input",ExpressionUUID->"244b2342-00eb-4b4c-823a-0afb8821d491"]
+}
+]
+*)
+
